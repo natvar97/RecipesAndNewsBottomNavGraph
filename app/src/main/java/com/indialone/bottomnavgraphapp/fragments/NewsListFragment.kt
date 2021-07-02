@@ -42,28 +42,36 @@ class NewsListFragment : Fragment() {
 
         newsViewModel.getTopHeadlines().observe(viewLifecycleOwner) { newsEntity ->
             news.addAll(newsEntity.articles as ArrayList<ArticlesItem>)
+            createRecyclerView(news)
         }
 
         newsViewModel.getTechCrunchNews().observe(viewLifecycleOwner) { newsEntity ->
             news.addAll(newsEntity.articles as ArrayList<ArticlesItem>)
+            createRecyclerView(news)
         }
 
         newsViewModel.getAppleNews().observe(viewLifecycleOwner) { newsEntity ->
             news.addAll(newsEntity.articles as ArrayList<ArticlesItem>)
+            createRecyclerView(news)
         }
 
         newsViewModel.getTeslaNews().observe(viewLifecycleOwner) { newsEntity ->
             news.addAll(newsEntity.articles as ArrayList<ArticlesItem>)
+            createRecyclerView(news)
         }
 
         newsViewModel.getWsjComNews().observe(viewLifecycleOwner) { newsEntity ->
             news.addAll(newsEntity.articles as ArrayList<ArticlesItem>)
+            createRecyclerView(news)
         }
 
+
+    }
+
+    fun createRecyclerView(news : ArrayList<ArticlesItem>) {
         mBinding.recyclerView.layoutManager = LinearLayoutManager(mBinding.root.context)
         mBinding.recyclerView.adapter =
             NewsRecyclerAdapter(news)
-
     }
 
 }
