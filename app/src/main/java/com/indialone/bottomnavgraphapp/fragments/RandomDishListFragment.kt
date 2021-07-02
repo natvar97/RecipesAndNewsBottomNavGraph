@@ -72,7 +72,7 @@ class RandomDishListFragment : Fragment(R.layout.fragment_random_dish_list) {
         var type = ""
         if (recipes.dishTypes!!.isNotEmpty()) {
             type = recipes.dishTypes.get(0)!!
-            mBinding.tvCookingDirection.text = type
+            mBinding.tvType.text = type
         }
 
 

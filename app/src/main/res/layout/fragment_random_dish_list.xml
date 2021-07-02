@@ -70,6 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_category"
                 android:layout_margin="10dp"
+                android:text="Ingredients"
                 android:textColor="@color/light_red"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -91,8 +92,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_ingredients"
                 android:layout_margin="10dp"
-                android:textColor="@color/black"
-                android:textSize="18sp"
+                android:text="Cooking Directions"
+                android:textColor="@color/light_red"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
