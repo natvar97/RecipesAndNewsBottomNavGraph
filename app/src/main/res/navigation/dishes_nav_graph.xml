@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dishes_nav_graph"
+    app:startDestination="@id/randomDishListFragment">
+
+    <fragment
+        android:id="@+id/randomDishListFragment"
+        android:name="com.indialone.bottomnavgraphapp.fragments.RandomDishListFragment"
+        android:label="@string/title_dish_list"
+        tools:layout="@layout/fragment_random_dish_list" />
+
+</navigation>

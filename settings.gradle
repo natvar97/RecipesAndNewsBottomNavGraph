@@ -1,0 +1,2 @@
+rootProject.name = "BottomNavGraphApp"
+include ':app'

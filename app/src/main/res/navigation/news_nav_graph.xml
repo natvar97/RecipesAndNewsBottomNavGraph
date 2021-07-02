@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/newsListFragment">
+
+    <fragment
+        android:id="@+id/newsListFragment"
+        android:name="com.indialone.bottomnavgraphapp.fragments.NewsListFragment"
+        android:label="@string/title_news_list"
+        tools:layout="@layout/fragment_news_list">
+        <argument android:name="news"
+            app:argType="com.indialone.bottomnavgraphapp.api.news.ArticlesItem"/>
+        <action
+            android:id="@+id/action_newsListFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.indialone.bottomnavgraphapp.fragments.NewsDetailFragment"
+        android:label="@string/title_news_details"
+        tools:layout="@layout/fragment_news_detail" />
+</navigation>
